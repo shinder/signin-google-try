@@ -17,6 +17,7 @@
 程式主要在 /routes/index.js 裡面，另一個是樣版頁 /views/index.ejs。用戶同意許可（登入）後，同樣跳轉到 http://localhost:3000。
 
 程式流程：
+
     1. 建立 OAuth2Client 物件後，使用 generateAuthUrl() 方法產生登入按鈕所需的 url。
     2. 注意，要取得 email 資料需要 userinfo.email 的 scope。個人在測試時只放 userinfo.email 會出錯；同時給 userinfo.profile 和 userinfo.email 即可正常執行。
     3. 用戶許可後，在 query string 取得的 code 參數，用來取得 tokens。取得的參數參考 /references/redirect-query-string.json 內容。取得的 tokens 格式參考 /references/from-code-to-tokens.json。
