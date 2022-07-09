@@ -1,0 +1,52 @@
+{
+    "tokens": {
+        "access_token": "ya29.a0AVA9y1suG9AkUf0wGNCXyI8qUViDlApUBbZGomLWi_Ogd9YLJe1Ips4xSfvD_Xr4mrR4wO7wjf-ENX0WF9-NonfpZ8rthuez49ktfoC9lVPBcH03rweM3-YZokaI2_DFFPSGkKZIwq6d3igXtG6AnEXT1TCN",
+        "refresh_token": "1//0e_R5PICEf7gmCgYIARAAGA4SNwF-L9Irf_hpmnHX9OzvP9MEeqpDmx3uBdduECrcVS-teMgEOMGRr8LKqsfOccFdkIrxDmAWlw0",
+        "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+        "token_type": "Bearer",
+        "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjFiZDY4NWY1ZThmYzYyZDc1ODcwNWMxZWIwZThhNzUyNGM0NzU5NzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2NTUxNDYxOTIyNjktdGVlajdkajBpbGgyOHZpYTZmbzQwMHVrcHZlZnNvMTMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2NTUxNDYxOTIyNjktdGVlajdkajBpbGgyOHZpYTZmbzQwMHVrcHZlZnNvMTMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTE1MjI2NzM3MTY2MjU3Mzc2MDYiLCJlbWFpbCI6InNoaW5kZXIubGluQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiT0tYTm1JdmRzZDF0YzhtbFNmSF9VdyIsIm5hbWUiOiJTaGluZGVyIExpbiIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQUZkWnVjbzh4b1hqMXFKbkVCZzVRY0o3bDYwd2tHNUlqTTVtalNYaXlEb0g5Zz1zOTYtYyIsImdpdmVuX25hbWUiOiJTaGluZGVyIiwiZmFtaWx5X25hbWUiOiJMaW4iLCJsb2NhbGUiOiJ6aC1UVyIsImlhdCI6MTY1NzM1NTcyMywiZXhwIjoxNjU3MzU5MzIzfQ.e8D8jadGCr1EUZRecJZsFzrMpkZr48jh4X-2JBIePsd2wPJCf00a42d39mcLOt8ntIP_wl43HV6M2kgUNxfcWvI6oYF68_J-UF4wbXMUUWZSYqrb3xF6H5DQ2XlhtYWsulAO518BobYmIdWQavc-X3QdvWa9sU4QZxgRd8pGygKBQjw3uXrC19AHt-Tl9eRWHXkOzMUIauyJqtD10fuXRzOerbG8WJtBQhaKUQY8TQHw1iGwKuaFmW8JI7TyBsxPGAvigkWj5qgRXhNXYvC03GanYnDfaaLHENgBzZd_ybKwGhNTd49_3H2MdBKeMUwsznw5TieMtVMFrffZNMZA_g",
+        "expiry_date": 1657359322216
+    },
+    "res": {
+        "config": {
+            "method": "POST",
+            "url": "https://oauth2.googleapis.com/token",
+            "data": "code=4%2F0AdQt8qgtYVC9h8phlPlUPzgSE5uCl3lbxrFkF78SvHRTOyh-Q_vKlnM-Xcd3YM6ce1BYrA&client_id=655146192269-teej7dj0ilh28via6fo400ukpvefso13.apps.googleusercontent.com&client_secret=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&redirect_uri=http%3A%2F%2Flocalhost%3A3000&grant_type=authorization_code&code_verifier=",
+            "headers": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "User-Agent": "google-api-nodejs-client/8.1.0",
+                "x-goog-api-client": "gl-node/16.13.2 auth/8.1.0",
+                "Accept": "application/json"
+            },
+            "body": "code=4%2F0AdQt8qgtYVC9h8phlPlUPzgSE5uCl3lbxrFkF78SvHRTOyh-Q_vKlnM-Xcd3YM6ce1BYrA&client_id=655146192269-teej7dj0ilh28via6fo400ukpvefso13.apps.googleusercontent.com&client_secret=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&redirect_uri=http%3A%2F%2Flocalhost%3A3000&grant_type=authorization_code&code_verifier=",
+            "responseType": "json"
+        },
+        "data": {
+            "access_token": "ya29.a0AVA9y1suG9AkUf0wGNCXyI8qUViDlApUBbZGomLWi_Ogd9YLJe1Ips4xSfvD_Xr4mrR4wO7wjf-ENX0WF9-NonfpZ8rthuez49ktfoC9lVPBcH03rweM3-YZokaI2_DFFPSGkKZIwq6d3igXtG6AnEXT1TCN",
+            "refresh_token": "1//0e_R5PICEf7gmCgYIARAAGA4SNwF-L9Irf_hpmnHX9OzvP9MEeqpDmx3uBdduECrcVS-teMgEOMGRr8LKqsfOccFdkIrxDmAWlw0",
+            "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+            "token_type": "Bearer",
+            "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjFiZDY4NWY1ZThmYzYyZDc1ODcwNWMxZWIwZThhNzUyNGM0NzU5NzUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2NTUxNDYxOTIyNjktdGVlajdkajBpbGgyOHZpYTZmbzQwMHVrcHZlZnNvMTMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2NTUxNDYxOTIyNjktdGVlajdkajBpbGgyOHZpYTZmbzQwMHVrcHZlZnNvMTMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTE1MjI2NzM3MTY2MjU3Mzc2MDYiLCJlbWFpbCI6InNoaW5kZXIubGluQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiT0tYTm1JdmRzZDF0YzhtbFNmSF9VdyIsIm5hbWUiOiJTaGluZGVyIExpbiIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQUZkWnVjbzh4b1hqMXFKbkVCZzVRY0o3bDYwd2tHNUlqTTVtalNYaXlEb0g5Zz1zOTYtYyIsImdpdmVuX25hbWUiOiJTaGluZGVyIiwiZmFtaWx5X25hbWUiOiJMaW4iLCJsb2NhbGUiOiJ6aC1UVyIsImlhdCI6MTY1NzM1NTcyMywiZXhwIjoxNjU3MzU5MzIzfQ.e8D8jadGCr1EUZRecJZsFzrMpkZr48jh4X-2JBIePsd2wPJCf00a42d39mcLOt8ntIP_wl43HV6M2kgUNxfcWvI6oYF68_J-UF4wbXMUUWZSYqrb3xF6H5DQ2XlhtYWsulAO518BobYmIdWQavc-X3QdvWa9sU4QZxgRd8pGygKBQjw3uXrC19AHt-Tl9eRWHXkOzMUIauyJqtD10fuXRzOerbG8WJtBQhaKUQY8TQHw1iGwKuaFmW8JI7TyBsxPGAvigkWj5qgRXhNXYvC03GanYnDfaaLHENgBzZd_ybKwGhNTd49_3H2MdBKeMUwsznw5TieMtVMFrffZNMZA_g",
+            "expiry_date": 1657359322216
+        },
+        "headers": {
+            "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+            "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+            "connection": "close",
+            "content-encoding": "gzip",
+            "content-type": "application/json; charset=utf-8",
+            "date": "Sat, 09 Jul 2022 08:35:23 GMT",
+            "expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+            "pragma": "no-cache",
+            "server": "scaffolding on HTTPServer2",
+            "transfer-encoding": "chunked",
+            "vary": "Origin, X-Origin, Referer",
+            "x-content-type-options": "nosniff",
+            "x-frame-options": "SAMEORIGIN",
+            "x-xss-protection": "0"
+        },
+        "status": 200,
+        "statusText": "OK",
+        "request": { "responseURL": "https://oauth2.googleapis.com/token" }
+    }
+}

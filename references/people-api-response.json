@@ -1,0 +1,79 @@
+{
+    "config": {
+        "url": "https://people.googleapis.com/v1/people/me?personFields=names,emailAddresses,photos",
+        "headers": {
+            "Authorization": "Bearer ya29.A0AVA9y1tPCArH9U5eUlWT-gxNjkcf268SeJFP-xAt9dXCqconjFKulNZq9FtB0Eem8vJ4yYTcZkIaNaNg8oDoAL1htDJxBSrJVnMQhuEAADBuHbDudLDdxLidQjadhEUeXAAm3Mcdt3wj_SLZ4BIyzuj1hEWOYUNnWUtBVEFTQVRBU0ZRRTY1ZHI4WTJfZFd0cDl6bUN0MWd1cjdRNXRXUQ0163",
+            "User-Agent": "google-api-nodejs-client/8.1.0",
+            "x-goog-api-client": "gl-node/16.13.2 auth/8.1.0",
+            "Accept": "application/json"
+        },
+        "responseType": "json",
+        "method": "GET"
+    },
+    "data": {
+        "resourceName": "people/111522673716625737606",
+        "etag": "%EggBAgMJLjc9PhoEAQIFByIMZDdDTjR0TThEclE9",
+        "names": [
+            {
+                "metadata": {
+                    "primary": true,
+                    "source": {
+                        "type": "PROFILE",
+                        "id": "111522673716625737606"
+                    },
+                    "sourcePrimary": true
+                },
+                "displayName": "Shinder Lin",
+                "familyName": "Lin",
+                "givenName": "Shinder",
+                "displayNameLastFirst": "Lin, Shinder",
+                "unstructuredName": "Shinder Lin"
+            }
+        ],
+        "photos": [
+            {
+                "metadata": {
+                    "primary": true,
+                    "source": {
+                        "type": "PROFILE",
+                        "id": "111522673716625737606"
+                    }
+                },
+                "url": "https://lh3.googleusercontent.com/a-/AFdZuco8xoXj1qJnEBg5QcJ7l60wkG5IjM5mjSXiyDoH9g=s100"
+            }
+        ],
+        "emailAddresses": [
+            {
+                "metadata": {
+                    "primary": true,
+                    "verified": true,
+                    "source": {
+                        "type": "ACCOUNT",
+                        "id": "111522673716625737606"
+                    },
+                    "sourcePrimary": true
+                },
+                "value": "shinder.lin@gmail.com"
+            }
+        ]
+    },
+    "headers": {
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+        "cache-control": "private",
+        "connection": "close",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=UTF-8",
+        "date": "Sat, 09 Jul 2022 07:33:20 GMT",
+        "server": "ESF",
+        "transfer-encoding": "chunked",
+        "vary": "Origin, X-Origin, Referer",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "0"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "request": {
+        "responseURL": "https://people.googleapis.com/v1/people/me?personFields=names,emailAddresses,photos"
+    }
+}

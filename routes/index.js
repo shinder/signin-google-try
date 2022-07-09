@@ -6,7 +6,6 @@ var router = express.Router();
 // 載入 GCP OAuth 2.0 用戶端 ID 憑證
 const keys = require(__dirname + '/../client_secret.json');
 
-/* GET home page. */
 router.get('/', async function(req, res, next) {
   const oAuth2c = new OAuth2Client(
     keys.web.client_id,
@@ -24,51 +23,27 @@ router.get('/', async function(req, res, next) {
     ]
   });
 
+  // qs 內容參考 /references/redirect-query-string.json
   const qs = req.query;
-  /*
-    {
-    "code": "4/0AdQt8qha385aZL1cVhlwD-SKuk9jDufqiodir_HU634YrFVKlLp8hL1FmlTc2r0Eilk8JQ",
-    "scope": "profile https://www.googleapis.com/auth/userinfo.profile"
-    }
-  */
+
   let myData = {};
 
   if(qs.code){
+
+    // 內容參考 /references/from-code-to-tokens.json
     const r = await oAuth2c.getToken(qs.code);
+    console.log(JSON.stringify(r));
     oAuth2c.setCredentials(r.tokens);
-    console.log({tokens: r.tokens});
-    // https://oauth2.googleapis.com/tokeninfo?id_token=${r.tokens.id_token}`,
+    
+    // 連線回應內容參考 /references/tokeninfo-results-oauth2.googleapis.com.json
+    console.log(`https://oauth2.googleapis.com/tokeninfo?id_token=${r.tokens.id_token}`)
 
     const url = 'https://people.googleapis.com/v1/people/me?personFields=names,emailAddresses,photos';
-    const res = await oAuth2c.request({url});
-    console.log(res);
-    myData = res;
-    /*
-    {
-        "resourceName": "people/111522673716625737606",
-        "etag": "%EgUBAi43PRoEAQIFByIMZDdDTjR0TThEclE9",
-        "names": [
-            {
-                "metadata": {
-                    "primary": true,
-                    "source": {
-                        "type": "PROFILE",
-                        "id": "111522673716625737606"
-                    },
-                    "sourcePrimary": true
-                },
-                "displayName": "Shinder Lin",
-                "familyName": "Lin",
-                "givenName": "Shinder",
-                "displayNameLastFirst": "Lin, Shinder",
-                "unstructuredName": "Shinder Lin"
-            }
-        ]
-    }
-    */
+    
+    const response = await oAuth2c.request({url});
+    // response 內容參考 /references/people-api-response.json
+    myData = response.data;
   }
-  
-
 
   res.render('index', { title: 'Shin', authorizeUrl, qs, myData });
 });
