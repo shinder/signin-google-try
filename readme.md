@@ -41,5 +41,5 @@
     2022-09-09: 
 
         1. 將測試的 Google server 回呼的位址改成 http://localhost:3000/callback
-        2. 注意修改設定後，再下載的憑證 json 可能不會包含 client_secret，要自行放入 json 檔。
 
+        2. 注意修改設定後，再下載的憑證 json 可能不會包含 client_secret，要自行放入 json 檔。
