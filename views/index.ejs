@@ -6,19 +6,7 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
     <a href="<%= authorizeUrl %>"><%= authorizeUrl %></a>
-
-    <% if(locals.qs && JSON.stringify(qs)!=='{}'){ %>
-      <pre>
-        <%- JSON.stringify(qs, null, 4); %>
-      </pre>
-    <% } %>
-
-    <% if(locals.qs && JSON.stringify(qs)!=='{}'){ %>
-      <pre>
-        <%- JSON.stringify(myData, null, 4); %>
-      </pre>
-    <% } %>
   </body>
 </html>

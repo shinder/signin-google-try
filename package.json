@@ -11,7 +11,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
-    "google-auth-library": "^8.1.0",
+    "google-auth-library": "^8.5.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
   }

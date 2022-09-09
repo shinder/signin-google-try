@@ -6,7 +6,7 @@
 
     1. 到「API 程式庫」>「公開」>「社交」啟用 Google People API。
     
-    2. 到「憑證」，點選「+建立憑證」>「OAuth 用戶 ID」。
+    2. 到「API和服務 > 憑證」，點選「+建立憑證」>「OAuth 用戶 ID」。
     
     3. 「應用程式類型」選「網頁應用程式」
     
@@ -35,4 +35,11 @@
     4. tokens 裡的 id_token 可直接用來呼叫 tokeninfo，方式如： https://oauth2.googleapis.com/tokeninfo?id_token=${r.tokens.id_token} ，就可以直接拿到用戶的 email 和名字。取得的資料格式參考 /references/tokeninfo-results-oauth2.googleapis.com.json。
     
     5. 也可以透過 People API 取得，注意 personFields 要下 emailAddresses 才能拿到 email 資料。取得的資料格式參考 /references/people-api-response.json。
+
+## 更新
+
+    2022-09-09: 
+
+        1. 將測試的 Google server 回呼的位址改成 http://localhost:3000/callback
+        2. 注意修改設定後，再下載的憑證 json 可能不會包含 client_secret，要自行放入 json 檔。
 
